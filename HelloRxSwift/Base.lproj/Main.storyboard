@@ -19,7 +19,39 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="rv8-hu-iFY">
+                                <rect key="frame" x="118.5" y="272.5" width="138" height="122"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s4p-9v-DZn">
+                                        <rect key="frame" x="0.0" y="0.0" width="138" height="30"/>
+                                        <state key="normal" title="basic"/>
+                                        <connections>
+                                            <action selector="basic" destination="BYZ-38-t0r" eventType="touchUpInside" id="8QX-TK-tUt"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QDW-hd-fSY">
+                                        <rect key="frame" x="0.0" y="46" width="138" height="30"/>
+                                        <state key="normal" title="createObservable"/>
+                                        <connections>
+                                            <action selector="createObservable" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xm4-95-YtQ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WSf-Om-aDf">
+                                        <rect key="frame" x="0.0" y="92" width="138" height="30"/>
+                                        <state key="normal" title="combineObservable"/>
+                                        <connections>
+                                            <action selector="combineObservable" destination="BYZ-38-t0r" eventType="touchUpInside" id="kiQ-iv-qjb"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="rv8-hu-iFY" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="HHj-ha-iMI"/>
+                            <constraint firstItem="rv8-hu-iFY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="P9r-Ta-l6x"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
