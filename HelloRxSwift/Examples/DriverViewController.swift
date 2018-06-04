@@ -16,6 +16,10 @@ class DriverViewController: UIViewController {
         case demo
     }
     
+    lazy var disposeBag = DisposeBag()
+    
+    @IBOutlet weak var textView: UITextView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -27,20 +31,23 @@ class DriverViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    func getObservable() -> Observable<String> {
-        return Observable<String>.create({ (o) -> Disposable in
-            
-            o.on(.error(MyError.demo))
-            
-            return Disposables.create {}
-        })
+    func getObservable() -> Observable<String?> {
+        let req = URLRequest(url: URL(string: "https://www.google.c")!)
+        return URLSession.shared.rx
+            .data(request: req)
+            .map({ String(data: $0, encoding: .utf8) })
     }
     
     @IBAction func withObservable() {
-    
+        getObservable().bind(to: textView.rx.text).disposed(by: disposeBag)
     }
     
     @IBAction func withDriver() {
-        
+        getObservable()
+            .asDriver(onErrorRecover: { (error) in
+                return Driver.just(error.localizedDescription)
+            })
+            .drive(textView.rx.text)
+            .disposed(by: disposeBag)
     }
 }
