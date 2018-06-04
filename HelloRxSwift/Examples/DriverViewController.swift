@@ -12,10 +12,6 @@ import RxSwift
 
 class DriverViewController: UIViewController {
 
-    enum MyError: Error {
-        case demo
-    }
-    
     lazy var disposeBag = DisposeBag()
     
     @IBOutlet weak var textView: UITextView!
