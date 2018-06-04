@@ -17,6 +17,7 @@
 		44DD19F320C12A4C0004F454 /* DriverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DD19F220C12A4C0004F454 /* DriverViewController.swift */; };
 		44DD19F520C12DFD0004F454 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DD19F420C12DFD0004F454 /* LoginViewController.swift */; };
 		44DD19F720C12E070004F454 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DD19F620C12E070004F454 /* LoginViewModel.swift */; };
+		44DD19F920C4C95A0004F454 /* QAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DD19F820C4C95A0004F454 /* QAViewController.swift */; };
 		FCF89E17B20CA0945EC7E15B /* Pods_HelloRxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FACC8201B54D34563B0BA9A0 /* Pods_HelloRxSwift.framework */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +35,7 @@
 		44DD19F220C12A4C0004F454 /* DriverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverViewController.swift; sourceTree = "<group>"; };
 		44DD19F420C12DFD0004F454 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		44DD19F620C12E070004F454 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		44DD19F820C4C95A0004F454 /* QAViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QAViewController.swift; sourceTree = "<group>"; };
 		DE00C94A53674AE1C102A479 /* Pods-HelloRxSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloRxSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HelloRxSwift/Pods-HelloRxSwift.debug.xcconfig"; sourceTree = "<group>"; };
 		FACC8201B54D34563B0BA9A0 /* Pods_HelloRxSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HelloRxSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -99,6 +101,7 @@
 				44DD19F220C12A4C0004F454 /* DriverViewController.swift */,
 				44DD19F420C12DFD0004F454 /* LoginViewController.swift */,
 				44DD19F620C12E070004F454 /* LoginViewModel.swift */,
+				44DD19F820C4C95A0004F454 /* QAViewController.swift */,
 			);
 			path = Examples;
 			sourceTree = "<group>";
@@ -227,6 +230,7 @@
 			files = (
 				44DD19F520C12DFD0004F454 /* LoginViewController.swift in Sources */,
 				445632AF20C1153300C7F270 /* ViewController.swift in Sources */,
+				44DD19F920C4C95A0004F454 /* QAViewController.swift in Sources */,
 				44DD19F320C12A4C0004F454 /* DriverViewController.swift in Sources */,
 				44DD19EE20C127510004F454 /* SubjectViewController.swift in Sources */,
 				445632AD20C1153300C7F270 /* AppDelegate.swift in Sources */,

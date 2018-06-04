@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Pao-up-IOh">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zST-7m-ff7">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -114,6 +114,34 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k84-Mc-XbL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1506" y="34"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="I2r-It-WJm">
+            <objects>
+                <viewController id="zST-7m-ff7" customClass="QAViewController" customModule="HelloRxSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="icL-Xp-HJu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zDp-zJ-pBi">
+                                <rect key="frame" x="139.5" y="318.5" width="96" height="30"/>
+                                <state key="normal" title="Send Request"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="zDp-zJ-pBi" firstAttribute="centerY" secondItem="icL-Xp-HJu" secondAttribute="centerY" id="fLh-xn-VxR"/>
+                            <constraint firstItem="zDp-zJ-pBi" firstAttribute="centerX" secondItem="icL-Xp-HJu" secondAttribute="centerX" id="oAv-H9-Brq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Fqr-aU-0hb"/>
+                    </view>
+                    <connections>
+                        <outlet property="requestButton" destination="zDp-zJ-pBi" id="Oee-3H-71d"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NKj-Zk-4go" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1505" y="808"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="bZG-F1-PFe">
